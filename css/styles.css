@@ -15,6 +15,15 @@ a {
   text-decoration: none;
 }
 
+/*Header*/
+
+header {
+  border-bottom: 3px solid black;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
 .nav-link {
   background-color: rgb(213, 214, 214);
   border-radius: 10px;
@@ -29,26 +38,51 @@ a {
   transition: ease-in 0.3s;
 }
 
-header {
-  border-bottom: 3px solid black;
-  background-color: #ffffff;
-  position: sticky;
-  top: 0;
+#navbarNav {
+  justify-content: flex-end;
 }
 
-.container h1.principal {
-  display: flex;
-  margin-top: 20px;
-  justify-content: center;
-  text-align: center;
-  /*background-color: aqua;*/
+.navbar-brand {
+  /*border: 1px solid red;*/
+  padding-left: 2%;
 }
 
-.intro {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+.navbar-nav {
+  /*border: 1px solid red;*/
 }
+
+/*Accordion*/
+
+.accordion-button {
+  cursor: pointer;
+  background-color: rgb(216, 218, 218);
+  border: rgb(0, 0, 0) solid 1px;
+  border-radius: 5px;
+  box-shadow: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 10px 15px;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.accordion-button:hover {
+  background-color: rgb(216, 218, 218);
+  border: black solid 1px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: rgb(216, 218, 218);
+}
+
+.accordion {
+  width: 80%;
+  /*border: 6px solid blue;*/
+}
+
+/*Footer*/
 
 footer {
   position: absolute;
@@ -78,51 +112,35 @@ li.nav-item {
   margin: 15px;
 }
 
-.accordion-button {
-  cursor: pointer;
-  background-color: rgb(216, 218, 218);
-  border: rgb(0, 0, 0) solid 1px;
-  border-radius: 5px;
-  box-shadow: none;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  padding: 10px 15px;
-  text-decoration: none;
-  /*width: 100%;*/
-  margin-bottom: 5px;
-}
-
-.accordion-button:hover {
-  background-color: rgb(216, 218, 218);
-  border: black solid 1px;
-}
-
-.accordion-button:not(.collapsed) {
-  color: inherit;
-  background-color: rgb(216, 218, 218);
-}
-
-#navbarNav {
-  justify-content: flex-end;
-}
+/*NUEVO PUEBA*/
 
 .col-lg-6 {
   /*background-color: yellow;*/
-  padding: 30px;
+  padding: 15x;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  /*border: 2px solid red*/
+  /*border: 2px solid red;*/
 }
 
-.img-fluid {
-  width: 80%;
-  margin-bottom: 20px;
+.container h1.principal {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /*background-color: aqua;*/
+  /*border: 3px solid red;*/
 }
 
-.accordion{
-  width: 100%;
-  
+.texto {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  /*border: 3px solid blue;*/
+  font-size: 80%;
+}
+
+.container{
+  margin-top: 5%;
 }
