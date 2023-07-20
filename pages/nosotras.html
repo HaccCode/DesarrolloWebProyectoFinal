@@ -28,6 +28,7 @@
   </head>
 
   <body>
+    <!--Header y NavBar-->
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -58,7 +59,7 @@
                 <a class="nav-link" href="/pages/galeria.html">Galeria</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/nosotros.html">Nosotras</a>
+                <a class="nav-link" href="/pages/nosotras.html">Nosotras</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/pages/contacto.html">Contacto</a>
@@ -72,15 +73,17 @@
     <main>
       <div class="container">
         <div class="row">
+          <!-- Encabezado -->
           <div class="col-lg-6">
             <div class="container">
               <h1 class="principal">Nosotras</h1>
-
+              <!-- Iframe Video -->
               <div class="container">
                 <iframe
+                  class="videoNos"
                   src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fzaerherreria%2Fvideos%2F1493520634347566%2F&show_text=false&width=267&t=0"
-                  width="267"
-                  height="476"
+                  width="207"
+                  height="416"
                   style="border: none; overflow: hidden"
                   scrolling="no"
                   frameborder="0"
@@ -92,21 +95,30 @@
               </div>
             </div>
           </div>
-
+          <!-- Texto -->
           <div class="col-lg-6">
-            <p>
+            <p class="texto">
+              Somos 2 entusiastas quienes desde la curiosidad y el deseo de
+              explorar, hallaron como resultado una nueva forma de dar vida a
+              los espacios con elementos cotidianos. Con espiritu aventurero y
+              la iniciativa de lograr llevar adelante un emprendimiento,
+              logramos darle vida y luz a esto que tanto nos gusta: crear.
+
+              <br />
               En ZAER, creemos que cada hogar merece tener su propio estilo
               personal. Nos dedicamos a crear diseños únicos y personalizados en
               hierro y madera para complementar la estética y la funcionalidad
               de su hogar. Nuestros productos son artesanales y están diseñados
               con pasión y atención al detalle, lo que resulta en piezas
               duraderas y hermosas que enriquecerán cualquier espacio.
+              <br />
             </p>
           </div>
         </div>
       </div>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <span class="text-muted"
@@ -116,6 +128,7 @@
       </div>
     </footer>
 
+    <!-- Js Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
