@@ -1,0 +1,135 @@
+/*Import*/
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/extends";
+
+/* Generalidades */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  position: relative;
+  padding-bottom: 65px;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 2%;
+}
+
+/* Header */
+header {
+  border-bottom: 3px solid $black-color;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+.nav-link {
+  background-color: $primary-color;
+  font-weight: 500;
+  @extend %button-style;
+
+  &:hover {
+    background-color: $secondary-color;
+    transition: color 0.3s, ease-in 0.3s;
+  }
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  padding-left: 2%;
+}
+
+/* Accordion */
+.accordion-button {
+  background-color: $secondary-color;
+  border: $black-color solid 1px;
+  color: $black-color;
+  font-weight: bold;
+  @extend %button-style;
+
+  &:hover {
+    background-color: $secondary-color;
+    border: $black-color solid 1px;
+  }
+
+  &.collapsed {
+    color: inherit;
+    background-color: $secondary-color;
+  }
+}
+
+.accordion {
+  width: 80%;
+}
+
+li.nav-item {
+  @include flex-center;
+  margin-right: 10px;
+}
+
+/*Main*/
+.col-lg-6 {
+  padding: 15px;
+  margin: 0;
+  @include flex-center;
+  min-height: 100%;
+  height: 100;
+}
+
+.container h1.principal {
+  @include flex-center;
+  text-align: center;
+}
+
+.texto {
+  @include flex-center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*Iframes*/
+.videoNos {
+  @include iframe;
+}
+
+.mapa {
+  @include iframe;
+}
+
+/*Iconos*/
+i {
+  font-size: 40px;
+  color: $black-color;
+}
+
+.container-icons {
+  @include flex-center;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 40px;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  @include flex-center;
+  text-align: center;
+  font-size: 80%;
+}
