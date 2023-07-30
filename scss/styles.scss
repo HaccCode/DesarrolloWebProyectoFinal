@@ -72,6 +72,7 @@ header {
 
 .accordion {
   width: 80%;
+  
 }
 
 li.nav-item {
@@ -132,4 +133,5 @@ footer {
   @include flex-center;
   text-align: center;
   font-size: 80%;
+  margin-bottom: 20px;
 }
