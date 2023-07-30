@@ -13,28 +13,33 @@
       crossorigin="anonymous"
     />
 
-    
     <!--Link GoogleFont-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
-    
+
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    
+
     <!--Link CSS Personalizado-->
     <link rel="stylesheet" href="../css/styles.css" />
 
-    <link rel="icon" type="image/ico" href="../img/favicon.ico">
+    <link rel="icon" type="image/ico" href="../img/favicon.ico" />
 
     <title>Zaer - Hierro y Madera - Contacto y acceso a Tiendas</title>
-    <meta name="description" content="¡Contáctanos para dar vida a tus espacios con diseños únicos en hierro y madera de ZAER! Nuestro apasionado equipo está listo para ayudarte a personalizar tu hogar con piezas artesanales que enriquecerán cualquier espacio. ¡Transforma tu hogar con creatividad y estilo!">
-    <meta name="keywords"  content="ZAER, CONTACTO, RRSS, REDES, TIENDA, DISEÑO, MAPA, UBICACIÓN, FACEBOOK, INSTAGRAM, WHATSAPP">
+    <meta
+      name="description"
+      content="¡Contáctanos para dar vida a tus espacios con diseños únicos en hierro y madera de ZAER! Nuestro apasionado equipo está listo para ayudarte a personalizar tu hogar con piezas artesanales que enriquecerán cualquier espacio. ¡Transforma tu hogar con creatividad y estilo!"
+    />
+    <meta
+      name="keywords"
+      content="ZAER, CONTACTO, RRSS, REDES, TIENDA, DISEÑO, MAPA, UBICACIÓN, FACEBOOK, INSTAGRAM, WHATSAPP"
+    />
   </head>
 
   <body>
@@ -94,13 +99,14 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="container mt-5">
-              <form>
+              <form action="https://formspree.io/f/moqojeer" method="POST">
                 <div class="form-group">
                   <label for="nombre">Nombre:</label>
                   <input
                     type="text"
                     class="form-control"
                     id="nombre"
+                    name="nombre"
                     placeholder="Ingrese su nombre"
                   />
                 </div>
@@ -110,6 +116,7 @@
                     type="text"
                     class="form-control"
                     id="apellido"
+                    name="apellido"
                     placeholder="Ingrese su apellido"
                   />
                 </div>
@@ -119,6 +126,7 @@
                     type="text"
                     class="form-control"
                     id="telefono"
+                    name="telefono"
                     placeholder="Ingrese su teléfono"
                   />
                 </div>
@@ -128,7 +136,9 @@
                     type="email"
                     class="form-control"
                     id="email"
+                    name="email"
                     placeholder="Ingrese su email"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -136,6 +146,7 @@
                   <textarea
                     class="form-control"
                     id="mensaje"
+                    name="mensaje"
                     rows="5"
                     placeholder="Escriba su mensaje aquí"
                   ></textarea>
@@ -149,47 +160,47 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="map-container">
-              <iframe
-                class="mapa"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1636.0627961530593!2d-57.91763398455853!3d-34.90329760732576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e60a449aee15%3A0xaca6a76efbb5f09a!2sC.%20129%201527%2C%20Berisso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1685927048327!5m2!1ses-419!2sar"
-                width="400"
-                height="300"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <!-- Botones RRSS -->
-            <div class="container-icons">
-              <a
-                href="https://www.mercadolibre.com.ar/perfil/ZAERHERRER%25C3%258DA"
-                target="_blank"
-              >
-                <i class="fas fa-store"></i>
-              </a>
+                <iframe
+                  class="mapa"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1636.0627961530593!2d-57.91763398455853!3d-34.90329760732576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e60a449aee15%3A0xaca6a76efbb5f09a!2sC.%20129%201527%2C%20Berisso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1685927048327!5m2!1ses-419!2sar"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <!-- Botones RRSS -->
+              <div class="container-icons">
+                <a
+                  href="https://www.mercadolibre.com.ar/perfil/ZAERHERRER%25C3%258DA"
+                  target="_blank"
+                >
+                  <i class="fas fa-store"></i>
+                </a>
 
-              <a href="https://www.facebook.com/zaerherreria" target="_blank">
-                <i class="fab fa-facebook"></i>
-              </a>
+                <a href="https://www.facebook.com/zaerherreria" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
 
-              <a
-                href="https://www.instagram.com/zaerherreria/?hl=es"
-                target="_blank"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
+                <a
+                  href="https://www.instagram.com/zaerherreria/?hl=es"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
 
-              <a
-                href="https://api.whatsapp.com/send?phone=+5492214981365&text=Hola,%20les%20tengo%20una%20consulta"
-                target="_blank"
-              >
-                <i class="fab fa-whatsapp"></i>
-              </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=+5492214981365&text=Hola,%20les%20tengo%20una%20consulta"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        
       </div>
     </main>
 
