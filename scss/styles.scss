@@ -57,8 +57,9 @@ header {
   border: $black-color solid 1px;
   color: $black-color;
   font-weight: bold;
+  position: static;
   @extend %button-style;
-
+  
   &:hover {
     background-color: $secondary-color;
     border: $black-color solid 1px;
@@ -67,12 +68,11 @@ header {
   &.collapsed {
     color: inherit;
     background-color: $secondary-color;
-  }
+    }
 }
 
 .accordion {
   width: 80%;
-  
 }
 
 li.nav-item {
